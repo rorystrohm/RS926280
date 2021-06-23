@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "test1",
+      "setup": "javac homework20_1.java",
+      "run": "java homework20_1",
+      "input": "1\r\n2\r\n2\r\n7\r\n8",
+      "output": "head-->1-->2-->7-->8-->null",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "test2",
+      "setup": "javac homework20_1.java",
+      "run": "java homework20_1",
+      "input": "3\r\n3\r\n3\r\n1\r\n2",
+      "output": "head-->3-->1-->2-->null",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
