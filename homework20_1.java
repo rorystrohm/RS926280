@@ -25,7 +25,7 @@ public class homework20_1
       llist.head.next.next = new ListNode(3);
       llist.head.next.next.next = new ListNode(3);
       llist.head.next.next.next.next = new ListNode(5);
-      System.out.println("input: " + llist);
+      System.out.println("input: 1,2,3,3,5");
       deleteDuplicates(llist);
       System.out.println("output: " + llist);
       llist = new LinkedList();
@@ -34,7 +34,7 @@ public class homework20_1
       llist.head.next.next = new ListNode(1);
       llist.head.next.next.next = new ListNode(2);
       llist.head.next.next.next.next = new ListNode(3);
-      System.out.println("\ninput: " + llist);
+      System.out.println("input: 1,1,1,2,3");
       deleteDuplicates(llist);
       System.out.println("output: " + llist);
    }
