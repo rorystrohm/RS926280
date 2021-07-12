@@ -6,9 +6,9 @@ public class homework20_1
        LinkedList llist = new LinkedList();
        llist.head = new ListNode(1);
        llist.head.next = new ListNode(2);
-       llist.head.next.next = new ListNode(3);
-       llist.head.next.next.next = new ListNode(3);
-       llist.head.next.next.next.next = new ListNode(5);
+       llist.head.next.next = new ListNode(7);
+       llist.head.next.next.next = new ListNode(7);
+       llist.head.next.next.next.next = new ListNode(8);
 
        System.out.println("input: " + llist); //printing initial list
        deleteDuplicates(llist); //calling deleteDuplicates method
@@ -16,10 +16,10 @@ public class homework20_1
 
        //creating a new Linked list
        llist = new LinkedList();
-       llist.head = new ListNode(1);
-       llist.head.next = new ListNode(1);
-       llist.head.next.next = new ListNode(1);
-       llist.head.next.next.next = new ListNode(2);
+       llist.head = new ListNode(3);
+       llist.head.next = new ListNode(3);
+       llist.head.next.next = new ListNode(2);
+       llist.head.next.next.next = new ListNode(1);
        llist.head.next.next.next.next = new ListNode(3);
 
        System.out.println("\ninput: " + llist); //printing initial list
