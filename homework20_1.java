@@ -4,43 +4,46 @@ numbers, leaving only distinct numbers from the original list.In this
 program, you need to 
 (1) read 5 numbers and set them in a linkedlist in order
 (2) delete duplicate
-
 Example 1:
 input: 1,2,3,3,5
 output: head-->1-->2-->3-->5-->null
-
 Example 2:
 input: 1,1,1,2,3
 output: head-->1-->2-->3-->null
-
 Please complete the following program to fullfil the function.
 */
+
+import java.util.Iterator;
+
 public class homework20_1
 {
    public static void main(String[] args)
    {
-      LinkedList llist = new LinkedList();
-      llist.head = new ListNode(1);
-      llist.head.next = new ListNode(2);
-      llist.head.next.next = new ListNode(3);
-      llist.head.next.next.next = new ListNode(3);
-      llist.head.next.next.next.next = new ListNode(5);
-      System.out.println("input: 1,2,3,3,5");
-      deleteDuplicates(llist);
-      System.out.println("output: " + llist);
-      llist = new LinkedList();
-      llist.head = new ListNode(1);
-      llist.head.next = new ListNode(1);
-      llist.head.next.next = new ListNode(1);
-      llist.head.next.next.next = new ListNode(2);
-      llist.head.next.next.next.next = new ListNode(3);
-      System.out.println("input: 1,1,1,2,3");
-      deleteDuplicates(llist);
-      System.out.println("output: " + llist);
+      LinkedList linklist = new LinkedList();
+      linklist.head = new ListNode(1);
+      linklist.head.next = new ListNode(2);
+      linklist.head.next.next = new ListNode(3);
+      linklist.head.next.next.next = new ListNode(3);
+      linklist.head.next.next.next.next = new ListNode(5);
+      System.out.print("/ninput: " + linklist);
+      System.out.println(linklist.get(1));
+      deleteDuplicates(linklist);
+      System.out.println("output: " + linklist);
+      
+      LinkedList lunklist = new LinkedList();
+      lunklist = new LinkedList();
+      lunklist.head = new ListNode(1);
+      lunklist.head.next = new ListNode(1);
+      lunklist.head.next.next = new ListNode(1);
+      lunklist.head.next.next.next = new ListNode(2);
+      lunklist.head.next.next.next.next = new ListNode(3);
+      System.out.println("/ninput: " + lunklist);
+      deleteDuplicates(lunklist);
+      System.out.println("output: " + lunklist);
    }
-   public static void deleteDuplicates(LinkedList llist)
+   public static void deleteDuplicates(LinkedList list)
    {
-      ListNode curr1 = llist.head;
+      ListNode curr1 = list.head;
       ListNode curr2;
       while(curr1 != null) {
          int value = curr1.value;
