@@ -26,7 +26,6 @@ public class homework20_1
       linklist.head.next.next.next = new ListNode(3);
       linklist.head.next.next.next.next = new ListNode(5);
       System.out.print("/ninput: " + linklist);
-      System.out.println(linklist.get(1));
       deleteDuplicates(linklist);
       System.out.println("output: " + linklist);
       
