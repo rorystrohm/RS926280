@@ -18,8 +18,8 @@ public class homework20_1
        llist = new LinkedList();
        llist.head = new ListNode(3);
        llist.head.next = new ListNode(3);
-       llist.head.next.next = new ListNode(2);
-       llist.head.next.next.next = new ListNode(1);
+       llist.head.next.next = new ListNode(1);
+       llist.head.next.next.next = new ListNode(2);
        llist.head.next.next.next.next = new ListNode(3);
 
        System.out.println("\ninput: " + llist); //printing initial list
